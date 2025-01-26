@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#sorteioP{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: red;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 150px;
+    padding-bottom: 8px;
+}
+
+p{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#nomesadd{
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(180, 164, 164);
+}
+
+input{
+    background: none;
+    border: none;
+    color: rgb(70, 6, 6);
+    padding-left: 2px;
+    font-size: 25px;
+    display: flex;
+    width: 100%;
+
+}
+
+#botãoadd{
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    background: none;
+    border-left: 2px solid rgb(70, 6, 6);
+    font-size: 20px;
+}
+
+#lista{
+    padding: 5px;
+    padding-right: 10px;
+    border: 2px solid rgb(180, 164, 164);
+    border-radius: 5px;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#excluir{
+    border-left: 2px solid rgb(180, 164, 164);
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#botãosortea{
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 12px;
+    background-color: rgb(180, 164, 164);
+    color: rgb(70, 6, 6);
+    margin-top: 10px;
+    font-size: 25px;
+}
+
