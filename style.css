@@ -2,6 +2,9 @@
     margin: 0%;
     padding: 0%;
 }
+body{
+    background-color: black;
+}
 
 #sorteioP{
     height: 100vh;
@@ -50,7 +53,7 @@ input{
     font-size: 20px;
 }
 
-#lista{
+.lista{
     padding: 5px;
     padding-right: 10px;
     border: 2px solid rgb(180, 164, 164);
@@ -61,7 +64,7 @@ input{
     display: flex;
     justify-content: space-between;
 }
-#excluir{
+.excluir{
     border-left: 2px solid rgb(180, 164, 164);
     padding-left: 10px;
     cursor: pointer;
