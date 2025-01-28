@@ -1,11 +1,11 @@
 @media screen and (max-width:499px) {
 
     h1{
-        font-size: 90px;
+        font-size: 70px;
         text-align: center;
     }
     #sorteioS{
-        padding: 10px;
+        padding: 25px;
     }
     
 }
