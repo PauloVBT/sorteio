@@ -16,7 +16,7 @@ function addlista(){
         
         ++contador;
 
-        let novoItem = `<div class="lista" id="${contador}">
+        var novoItem = `<div class="lista" id="${contador}">
                 <div class="nome" id="${contador}">${input.value}</div>
                 <div onclick="deletar(id)" class="excluir" id="${contador}">X</div>
             </div>`;
@@ -38,5 +38,9 @@ function deletar(id){
 function sortear(id){
     var tarefa = document.getElementById(id = Math.floor(Math.random() * (contador - 0 + 1)) + 0);
     tarefa.remove();
-}   
+}
+
+botãosortea.addEventListener("click", () => {
+    sortear()
+})
 
