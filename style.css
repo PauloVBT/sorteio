@@ -13,6 +13,14 @@ h1{
     color: white;
     font-size: 40px;
 }
+
+#inputNomes{
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+}
+
 .card{
     background-color: white;
     padding: 24px;
@@ -64,11 +72,4 @@ h2{
     text-align: center;
     line-height: 48px;
     font-size: 24px;
-}
-
-#inputNomes{
-    background-color: white;
-    padding: 8px;
-    margin-top: 4px;
-    border-radius: 8px;
 }

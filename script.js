@@ -1,10 +1,32 @@
+let maiorValor = 0
+//Adiciona Nomes//
+
+function adicionaNomes(){
+    let inputAddNomes = document.getElementById("inputAddNomes");
+
+    inputAddNomesValue = inputAddNomes.value 
+
+    let listaDeNomes = document.getElementById("listaDeNomes");
+    
+    let li = `<li>${inputAddNomesValue}</li>`;
+
+    ++maiorValor
+
+    if((inputAddNomesValue !== "") && (inputAddNomesValue !== null) && (inputAddNomesValue !== undefined)){
+
+    listaDeNomes.innerHTML += li
+
+    inputAddNomes.value = "";
+    inputAddNomes.focus();
+
+}
+
+}
+
+//sorteio//
 
 async function sortear(){
     const totalResultados = Number(document.querySelector('#totalResultadosInput').value);
-
-    const menorValor = Number(document.querySelector('#menorValorInput').value);
-
-    const maiorValor = Number(document.querySelector('#maiorValorInput').value);
 
     for(let j = 0; j < 20; j++){
 
@@ -14,7 +36,7 @@ async function sortear(){
 
     for(let i = 0; i < totalResultados; i++){
 
-    const resultado = Math.floor(Math.random() * (maiorValor - menorValor + 1) + menorValor);
+    const resultado = Math.floor(Math.random() * (maiorValor - 1 + 1) + 1);
 
     const elementoHTMLDoResultado = document.createElement('div');
 
@@ -32,27 +54,4 @@ function wait(tempo){
     return new Promise((resolve) => {
         setTimeout(() => resolve(), tempo)
     });
-}
-
-//Adiciona Nomes//
-
-function adicionaNomes(){
-    let inputAddNomes = document.getElementById("inputAddNomes");
-
-    inputAddNomesValue = inputAddNomes.value 
-
-    let listaDeNomes = document.getElementById("listaDeNomes");
-    
-    let li = `<li>${inputAddNomesValue}</li>`;
-
-
-    if((inputAddNomesValue !== "") && (inputAddNomesValue !== null) && (inputAddNomesValue !== undefined)){
-
-    listaDeNomes.innerHTML += li
-
-    inputAddNomes.value = "";
-    inputAddNomes.focus();
-
-}
-
 }
