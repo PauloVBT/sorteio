@@ -1,3 +1,4 @@
+
 async function sortear(){
     const totalResultados = Number(document.querySelector('#totalResultadosInput').value);
 
@@ -31,4 +32,27 @@ function wait(tempo){
     return new Promise((resolve) => {
         setTimeout(() => resolve(), tempo)
     });
+}
+
+//Adiciona Nomes//
+
+function adicionaNomes(){
+    let inputAddNomes = document.getElementById("inputAddNomes");
+
+    inputAddNomesValue = inputAddNomes.value 
+
+    let listaDeNomes = document.getElementById("listaDeNomes");
+    
+    let li = `<li>${inputAddNomesValue}</li>`;
+
+
+    if((inputAddNomesValue !== "") && (inputAddNomesValue !== null) && (inputAddNomesValue !== undefined)){
+
+    listaDeNomes.innerHTML += li
+
+    inputAddNomes.value = "";
+    inputAddNomes.focus();
+
+}
+
 }
