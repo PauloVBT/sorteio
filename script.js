@@ -1,4 +1,5 @@
 let maiorValor = 0
+let adicionar = document.getElementById("adicionar");
 //Adiciona Nomes//
 
 function adicionaNomes(){
@@ -7,10 +8,10 @@ function adicionaNomes(){
     inputAddNomesValue = inputAddNomes.value 
 
     let listaDeNomes = document.getElementById("listaDeNomes");
-    
-    let li = `<li>${inputAddNomesValue}</li>`;
 
     ++maiorValor
+    
+    let li = `<li id="${maiorValor}"><div id="nome">${inputAddNomesValue}</div><button onclick="deletar(${maiorValor})" id="delete">X</button></li>`;
 
     if((inputAddNomesValue !== "") && (inputAddNomesValue !== null) && (inputAddNomesValue !== undefined)){
 
@@ -21,6 +22,14 @@ function adicionaNomes(){
 
 }
 
+}
+
+//função deleta nome//
+
+function deletar(id){
+    var tarefa = document.getElementById(id);
+    tarefa.remove();
+    --maiorValor
 }
 
 //sorteio//
@@ -55,3 +64,12 @@ function wait(tempo){
         setTimeout(() => resolve(), tempo)
     });
 }
+
+
+//enter click//
+inputAddNomes.addEventListener("keyup" , function(event){
+    if(event.keyCode === 13) {
+        event.preventDefault();
+        adicionar.click();
+    }
+});
