@@ -19,6 +19,7 @@ function adicionaNomes(){
 
     inputAddNomes.value = "";
     inputAddNomes.focus();
+    document.getElementById("limpaLista").style.display = "block"
 
 }
 
@@ -38,6 +39,7 @@ function deletarTudo(){
     TUDO.remove();
 }
     maiorValor = 0
+    document.getElementById("limpaLista").style.display = "none"
 }
 
 //sorteio//

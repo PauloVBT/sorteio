@@ -15,12 +15,14 @@ h1{
 }
 
 #inputNomes{
+    width: 90%;
     background-color: rgba(0, 0, 0, 0.705);
-    padding: 8px;
+    padding: 16px;
     margin-bottom: 4px;
-    border-radius: 8px;
+    border-radius: 24px;
 }
 #inputAddNomes{
+    width: 45%;
     height: 25px;
     border-radius: 4px;
     border: solid 1px rgb(51, 50, 50);
@@ -38,7 +40,6 @@ ol{
     color: white;
     border-radius: 5px;
     padding-top: 16px;
-    font-size: large;
     background-color: rgb(44, 39, 39);
 }
 
@@ -46,11 +47,20 @@ ol{
     color: red;
     position: relative;
     bottom: 21px; 
-    left: 75%;
-    width: 23%;
+    left: 77%;
+    width: 20%;
+}
+
+#limpaLista{
+    display: none;
+    position: relative;
+    left: 41%;
+    color: red;
+    border-radius: 5px;
 }
 
 .card{
+    width: 50%;
     color: white;
     background-color: rgba(0, 0, 0, 0.692);
     padding: 24px;
