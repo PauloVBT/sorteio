@@ -11,7 +11,7 @@ function adicionaNomes(){
 
     ++maiorValor
     
-    let li = `<li id="${maiorValor}"><div id="nome">${inputAddNomesValue}</div><button onclick="deletar(${maiorValor})" id="delete">X</button></li>`;
+    let li = `<li id="${maiorValor}" class="lista"><div id="nome">${inputAddNomesValue}</div><button onclick="deletar(${maiorValor})" id="delete">X</button></li>`;
 
     if((inputAddNomesValue !== "") && (inputAddNomesValue !== null) && (inputAddNomesValue !== undefined)){
 
@@ -30,6 +30,14 @@ function deletar(id){
     var tarefa = document.getElementById(id);
     tarefa.remove();
     --maiorValor
+}
+
+function deletarTudo(){
+    for(let T = 0; T < maiorValor; T++){
+    var TUDO = document.querySelector(".lista");
+    TUDO.remove();
+}
+    maiorValor = 0
 }
 
 //sorteio//
