@@ -54,7 +54,6 @@ ol{
 #limpaLista{
     display: none;
     position: relative;
-    left: 41%;
     color: red;
     border-radius: 5px;
 }
