@@ -1,0 +1,6 @@
+@media screen and (max-width:690px) {
+    #inputAddNomes{
+        margin-bottom: 2px;
+        width: 100%;
+    }
+}

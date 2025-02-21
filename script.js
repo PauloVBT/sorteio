@@ -62,7 +62,7 @@ async function sortear(){
     elementoHTMLDoResultado.classList.add('result-value');
 
     elementoHTMLDoResultado.innerText = resultado;
-    
+
     elementoHTMLResultsValues.append(elementoHTMLDoResultado);
 }
  await wait(30)
