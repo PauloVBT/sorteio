@@ -1,5 +1,6 @@
 let maiorValor = 0
 let adicionar = document.getElementById("adicionar");
+
 //Adiciona Nomes//
 
 function adicionaNomes(){
@@ -45,6 +46,7 @@ function deletarTudo(){
 //sorteio//
 
 async function sortear(){
+    if((inputAddNomesValue !== "") && (inputAddNomesValue !== null) && (inputAddNomesValue !== undefined)){
     const totalResultados = Number(document.querySelector('#totalResultadosInput').value);
 
     for(let j = 0; j < 20; j++){
@@ -57,19 +59,16 @@ async function sortear(){
 
     const resultado = Math.floor(Math.random() * (maiorValor - 1 + 1) + 1);
 
-    if(resultado = maiorValor){
-        resultado = -1
-    }
-
     const elementoHTMLDoResultado = document.createElement('div');
 
     elementoHTMLDoResultado.classList.add('result-value');
 
-    elementoHTMLDoResultado.innerText = resultado;
+    elementoHTMLDoResultado.innerText = resultado
 
     elementoHTMLResultsValues.append(elementoHTMLDoResultado);
 }
  await wait(30)
+}
 }
 }
 
