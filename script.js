@@ -57,6 +57,10 @@ async function sortear(){
 
     const resultado = Math.floor(Math.random() * (maiorValor - 1 + 1) + 1);
 
+    if(resultado = maiorValor){
+        resultado = -1
+    }
+
     const elementoHTMLDoResultado = document.createElement('div');
 
     elementoHTMLDoResultado.classList.add('result-value');
